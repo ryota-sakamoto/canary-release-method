@@ -17,5 +17,5 @@ https://argoproj.github.io/argo-rollouts/
 
 ## istio
 
-https://istio.io/docs/reference/config/networking/virtual-service/
-
+https://istio.io/docs/reference/config/networking/virtual-service/#HTTPRouteDestination  
+https://istio.io/docs/reference/config/networking/destination-rule/#LoadBalancerSettings
