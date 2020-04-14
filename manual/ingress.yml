@@ -1,0 +1,14 @@
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  name: echoserver-ingress
+  annotations:
+    nginx.ingress.kubernetes.io/affinity: cookie
+spec:
+  rules:
+  - host: sakamoto.test
+    http:
+      paths:
+      - backend:
+          serviceName: echoserver-service
+          servicePort: 8080
